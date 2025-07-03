@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+  Navigate,
+} from "react-router-dom";
+
+import ReviewList from "./components/ReviewList";
+import "./App.css";
+import MovieFeedback from "./components/MovieFeedback";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app-container">
+        <h1>Movie Feedback App📽️</h1>
+        <nav className="nav">
+          <Link to="/feedback"className="main">Give Feedback</Link>
+          <Link to="/reviews"className="main">View Reviews</Link>
+        </nav>
+        <Routes>
+          <Route path="/" element={<Navigate to="/feedback" />} />
+          <Route path="/feedback" element={<MovieFeedback />} />
+          <Route path="/reviews" element={<ReviewList />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
