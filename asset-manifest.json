@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/moviefeedback/static/css/main.d3af43c7.css",
+    "main.js": "/moviefeedback/static/js/main.b25b45a4.js",
+    "static/js/453.69485634.chunk.js": "/moviefeedback/static/js/453.69485634.chunk.js",
+    "index.html": "/moviefeedback/index.html",
+    "main.d3af43c7.css.map": "/moviefeedback/static/css/main.d3af43c7.css.map",
+    "main.b25b45a4.js.map": "/moviefeedback/static/js/main.b25b45a4.js.map",
+    "453.69485634.chunk.js.map": "/moviefeedback/static/js/453.69485634.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d3af43c7.css",
+    "static/js/main.b25b45a4.js"
+  ]
+}
